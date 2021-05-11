@@ -136,7 +136,7 @@ function generateStatus({
 function checkStatus(metric) {
   console.log(metric);
 
-  if (metric.statements <= 50) {
+  if (metric.level === 'red') {
     console.error('Failed');
 
     return false;

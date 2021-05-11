@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1620696506679" clover="3.2.0">
-  <project timestamp="1620696506679" name="All files">
-    <metrics statements="56" coveredstatements="56" conditionals="44" coveredconditionals="40" methods="18" coveredmethods="18" elements="118" coveredelements="114" complexity="0" loc="56" ncloc="56" packages="1" files="1" classes="1"/>
+<coverage generated="1620697269629" clover="3.2.0">
+  <project timestamp="1620697269629" name="All files">
+    <metrics statements="59" coveredstatements="59" conditionals="44" coveredconditionals="40" methods="18" coveredmethods="18" elements="121" coveredelements="117" complexity="0" loc="59" ncloc="59" packages="1" files="1" classes="1"/>
     <file name="functions.js" path="/home/mavelar/maestro-dev/coverage-monitor/src/functions.js">
-      <metrics statements="56" coveredstatements="56" conditionals="44" coveredconditionals="40" methods="18" coveredmethods="18"/>
+      <metrics statements="59" coveredstatements="59" conditionals="44" coveredconditionals="40" methods="18" coveredmethods="18"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="4" count="2" type="stmt"/>
@@ -38,28 +38,31 @@
       <line num="119" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="120" count="1" type="stmt"/>
       <line num="128" count="1" type="stmt"/>
-      <line num="137" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="138" count="1" type="stmt"/>
-      <line num="141" count="1" type="stmt"/>
-      <line num="145" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="151" count="8" type="stmt"/>
-      <line num="155" count="4" type="stmt"/>
-      <line num="156" count="4" type="stmt"/>
-      <line num="157" count="4" type="stmt"/>
-      <line num="158" count="4" type="stmt"/>
-      <line num="159" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="160" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="161" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="162" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="137" count="2" type="stmt"/>
+      <line num="139" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="140" count="1" type="stmt"/>
+      <line num="142" count="1" type="stmt"/>
+      <line num="145" count="1" type="stmt"/>
+      <line num="147" count="1" type="stmt"/>
+      <line num="151" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="157" count="8" type="stmt"/>
+      <line num="161" count="4" type="stmt"/>
+      <line num="162" count="4" type="stmt"/>
       <line num="163" count="4" type="stmt"/>
+      <line num="164" count="4" type="stmt"/>
       <line num="165" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="166" count="2" type="stmt"/>
+      <line num="166" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="167" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="168" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="169" count="4" type="stmt"/>
-      <line num="191" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="193" count="11" type="cond" truecount="5" falsecount="0"/>
-      <line num="194" count="10" type="stmt"/>
-      <line num="197" count="1" type="stmt"/>
-      <line num="204" count="1" type="stmt"/>
+      <line num="171" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="172" count="2" type="stmt"/>
+      <line num="175" count="4" type="stmt"/>
+      <line num="197" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="199" count="11" type="cond" truecount="5" falsecount="0"/>
+      <line num="200" count="10" type="stmt"/>
+      <line num="203" count="1" type="stmt"/>
+      <line num="210" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
