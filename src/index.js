@@ -107,8 +107,6 @@ async function run() {
         });
     }
   }
-
-  checkStatus();
 }
 
 run().catch((error) => core.setFailed(error.message));
