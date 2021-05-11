@@ -8122,6 +8122,12 @@ async function run() {
     });
   }
 
+  const status = checkStatus(metric);
+
+  if (!status) {
+    process.exit(1);
+  }
+
   if (comment) {
     const message = generateTable({ metric, commentContext });
 
@@ -12206,9 +12212,12 @@ function generateStatus({
   };
 }
 
-function checkStatus()
-{
-  console.log('CHECK STATUS B*TCH');
+function checkStatus(metric) {
+  if (metric.statements <= 50) {
+    return false;
+  }
+
+  return true;
 }
 
 function toBool(value) {
