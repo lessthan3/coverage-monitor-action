@@ -8,7 +8,7 @@ const {
   loadConfig,
   generateCommentHeader,
   parseWebhook,
-  checkStatus,
+  // checkStatus,
 } = require('./functions');
 const {
   createStatus,
@@ -56,11 +56,11 @@ async function run() {
     });
   }
 
-  const status = checkStatus(metric);
+  // const status = checkStatus(metric);
 
-  if (!status) {
-    process.exit(1);
-  }
+  // if (!status) {
+  //   process.exit(1);
+  // }
 
   if (comment) {
     const message = generateTable({ metric, commentContext });
