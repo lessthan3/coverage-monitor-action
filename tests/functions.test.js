@@ -2,6 +2,18 @@ const path = require('path');
 const parser = require('../src/functions');
 
 describe('functions', () => {
+  it('check final status (success)', async () => {
+    expect.hasAssertions();
+    const metric = { statements: 94 };
+    expect(parser.checkStatus(metric)).toStrictEqual(true);
+  });
+
+  it('check final status (failed)', async () => {
+    expect.hasAssertions();
+    const metric = { statements: 25 };
+    expect(parser.checkStatus(metric)).toStrictEqual(false);
+  });
+
   it('fails on invalid file', async () => {
     expect.hasAssertions();
 
@@ -115,7 +127,6 @@ describe('functions', () => {
 
   it('generates header', async () => {
     expect.hasAssertions();
-
     expect(parser.generateCommentHeader({ commentContext: 'foobar' })).toStrictEqual(`<!-- coverage-monitor-action: foobar -->`);
   });
 

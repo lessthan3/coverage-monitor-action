@@ -133,6 +133,14 @@ function generateStatus({
   };
 }
 
+function checkStatus(metric) {
+  if (metric.statements <= 50) {
+    return false;
+  }
+
+  return true;
+}
+
 function toBool(value) {
   return typeof value === 'boolean'
     ? value
@@ -204,4 +212,5 @@ module.exports = {
   loadConfig,
   generateCommentHeader,
   parseWebhook,
+  checkStatus,
 };

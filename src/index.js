@@ -8,6 +8,7 @@ const {
   loadConfig,
   generateCommentHeader,
   parseWebhook,
+  checkStatus,
 } = require('./functions');
 const {
   createStatus,
@@ -55,6 +56,12 @@ async function run() {
     });
   }
 
+  const status = checkStatus(metric);
+
+  if (!status) {
+    process.exit(1);
+  }
+
   if (comment) {
     const message = generateTable({ metric, commentContext });
 
@@ -100,6 +107,8 @@ async function run() {
         });
     }
   }
+
+  checkStatus();
 }
 
 run().catch((error) => core.setFailed(error.message));
