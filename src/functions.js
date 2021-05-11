@@ -134,6 +134,8 @@ function generateStatus({
 }
 
 function checkStatus(metric) {
+  console.log(metric);
+
   if (metric.statements <= 50) {
     console.error('Failed');
 
