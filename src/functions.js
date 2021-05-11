@@ -134,8 +134,6 @@ function generateStatus({
 }
 
 function checkStatus(metric) {
-  console.log(metric);
-
   if (metric.level === 'red') {
     console.error('Failed');
 
