@@ -12214,8 +12214,12 @@ function generateStatus({
 
 function checkStatus(metric) {
   if (metric.statements <= 50) {
+    console.error('Failed');
+
     return false;
   }
+
+  console.info('Success');
 
   return true;
 }
